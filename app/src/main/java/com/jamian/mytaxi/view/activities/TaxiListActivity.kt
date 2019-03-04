@@ -15,11 +15,11 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.jamian.mytaxi.R
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
-import com.jamian.mytaxi.R
 import com.jamian.mytaxi.adapter.TaxiListAdapter
 import com.jamian.mytaxi.network.TaxiData
 import com.jamian.mytaxi.utils.Constants

@@ -10,6 +10,7 @@ class RetrofitClient{
 
     companion object {
         const val MY_TAXI_BASE_URL = "https://fake-poi-api.mytaxi.com"
+        //const val MY_TAXI_BASE_URL = "https://raw.githubusercontent.com/jami4n/UberInspired/master/webservice.json/"
     }
 
     fun getNetworkCallList(): NetworkCalls? {
