@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Taxi</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="no_internet">Please check your internet connection and try again.</string>
+    <string name="server_error">We could not get nearby taxi details. Please try again after a while.</string>
+    <string name="loading">Looking out for taxis nearby</string>
+    <string name="pooling_available">Taxi available for pooling</string>
+    <string name="hire_available">Taxi available for hire</string>
+
+
+    <string name="all_taxis">All</string>
+    <string name="pool_taxis">Pooling</string>
+    <string name="personal_taxis">Taxi</string>
+
+
+</resources>

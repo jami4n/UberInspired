@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+        app:layout_scrollFlags="scroll|snap"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_shape" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_app_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:id="@+id/indicator_pooling"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/tv_pool_taxis"
+                app:layout_constraintEnd_toEndOf="@id/tv_pool_taxis"
+                app:layout_constraintTop_toBottomOf="@id/tv_pool_taxis"
+                android:background="@drawable/dot"
+                android:layout_marginTop="6dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"/>
+
+
+
+        <TextView
+                android:id="@+id/tv_all_taxis"
+                android:clickable="true"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/karla_regular"
+                android:text="@string/all_taxis"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:id="@+id/indicator_all"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@id/tv_all_taxis"
+                app:layout_constraintEnd_toEndOf="@id/tv_all_taxis"
+                app:layout_constraintTop_toBottomOf="@id/tv_all_taxis"
+                android:background="@drawable/dot"
+                android:layout_marginTop="6dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"/>
+
+
+        <TextView
+                android:id="@+id/tv_personal_taxis"
+                android:clickable="true"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                app:layout_constraintEnd_toStartOf="@id/tv_all_taxis"
+                app:layout_constraintTop_toTopOf="@id/tv_all_taxis"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/karla_regular"
+                android:text="@string/personal_taxis"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/colorTextGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <View
+                android:id="@+id/indicator_personal"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/tv_personal_taxis"
+                app:layout_constraintEnd_toEndOf="@id/tv_personal_taxis"
+                app:layout_constraintTop_toBottomOf="@id/tv_personal_taxis"
+                android:background="@drawable/dot"
+                android:layout_marginTop="6dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"/>
+
+
+        <TextView
+                android:id="@+id/tv_pool_taxis"
+                android:clickable="true"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                app:layout_constraintEnd_toStartOf="@id/tv_personal_taxis"
+                app:layout_constraintTop_toTopOf="@id/tv_all_taxis"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/karla_regular"
+                android:text="@string/pool_taxis"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/colorTextGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>
